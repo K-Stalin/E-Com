@@ -69,6 +69,10 @@ An advanced and user-friendly e-commerce platform that provides seamless shoppin
          ```
          npm run server
 
+# Contribution
+  - contributions are welcome!Feel free to fork the respository and submit a pull request🤩.
+
+
 # Tech Stack
  - Frontend:HTML,Tailwind CSS,JavaScript,React.js
  - Backend:Node.js,Express.js
