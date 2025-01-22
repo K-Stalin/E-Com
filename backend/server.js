@@ -31,6 +31,10 @@ app.use("/api/cart",cartRouter)
 app.use("/api/order",orderRouter)
 app.use('/api/review',reviewRouter)
 
+app.get("/",(req,res)=>{
+        res.send('API Working')
+})
+
 // Server Start => listen()
 app.listen(port,()=>{
       console.log(`http://localhost:${port}`)
