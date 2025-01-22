@@ -2,6 +2,7 @@
 
 ## Overview
 An advanced and user-friendly e-commerce platform that provides seamless shopping experiences, robust admin capabilities, and integrated sentiment analysis for user reviews. 
+
 ![image](https://github.com/user-attachments/assets/d4f66648-be64-47c1-8183-c0d0d38fc66a)
 
 
