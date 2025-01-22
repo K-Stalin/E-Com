@@ -27,7 +27,7 @@ An advanced and user-friendly e-commerce platform that provides seamless shoppin
 - **Order Management:**
    - Update order statuses (e.g. **Placed**,**Shipping**,**Delivered**)
 
-### ***Sentiment Analysis**
+### **Sentiment Analysis**
 - Analyze user reviews to extract negative reviews
 
 
