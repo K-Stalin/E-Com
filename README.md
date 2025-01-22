@@ -40,3 +40,10 @@ An advanced and user-friendly e-commerce platform that provides seamless shoppin
        ```git clone
        https://github.com/K-Stalin/E-Com.git
 
+  2. **Install Dependencies**
+       ```
+       npm install
+
+  3. **Environment Setup**
+      - create a .env file  for Frontend
+
