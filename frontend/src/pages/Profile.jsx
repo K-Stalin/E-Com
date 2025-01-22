@@ -38,6 +38,7 @@ const Profile = () => {
 
       if (response.data.success) {
         toast.success(response.data.message);
+        setbtnText(true)
       } else {
         toast.error(response.data.message);
       }
