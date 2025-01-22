@@ -20,7 +20,17 @@ An advanced and user-friendly e-commerce platform that provides seamless shoppin
 - **Payment Gateway:**
    - Secure online payments powered by **Stripe**.
 
+### **Admin Features**
+- **Manage Products:**
+   - Add new items to the store inventory.
+   - Remove items to the store inventory.
+- **Order Management:**
+   - Update order statuses (e.g. **Placed**,**Shipping**,**Delivered**)
 
- ## **Admin Features**
- - **Manage Products:**
+### ***Sentiment Analysis**
+- Analyze user reviews to extract negative reviews
+
+  ##Installation
+
+  1. **Clone the Repository**
     
