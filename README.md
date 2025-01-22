@@ -36,4 +36,4 @@ An advanced and user-friendly e-commerce platform that provides seamless shoppin
   1. **Clone the Repository**
        ```git clone
        https://github.com/K-Stalin/E-Com.git
-    
+
