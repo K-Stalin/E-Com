@@ -15,6 +15,7 @@ const Profile = () => {
   } = useContext(ShopContext);
   const [btnText, setbtnText] = useState(true);
   const [name, setName] = useState("");
+  const [profilePicName , setprofilePicName ] = useState('')
   const [email, setEmail] = useState("");
   const [reviewText, setreviewText] = useState("");
   const [starRating, setstarRating] = useState("");
@@ -39,6 +40,7 @@ const Profile = () => {
       if (response.data.success) {
         toast.success(response.data.message);
         setbtnText(true)
+         setprofilePicName(name);
       } else {
         toast.error(response.data.message);
       }
@@ -50,10 +52,16 @@ const Profile = () => {
   // Fetch data when the component mounts
   useEffect(() => {
     if (accountInformation) {
-      setName(accountInformation.name || "");
-      setEmail(accountInformation.email || "");
+      setName(accountInformation.name);
+      setprofilePicName(accountInformation.name)
+      setEmail(accountInformation.email);
     }
   }, [accountInformation]); // Re-run effect when accountInformation changes
+
+useEffect(()=>{
+  accountInformation
+},[])
+
 
 
  const  handleReviewSubmit = async  (e) =>
@@ -87,7 +95,7 @@ setTimeout(()=>{
         </div>
         <div>
           <span className="text-[12px]">Hello,</span>
-          <h3 className="sm:text-base font-medium">{name}</h3>
+          <h3 className="sm:text-base font-medium">{profilePicName}</h3>
         </div>
       </div>
 

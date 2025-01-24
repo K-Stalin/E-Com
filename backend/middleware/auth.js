@@ -6,7 +6,10 @@ const authUser = async (req,res,next) =>{
     const {token } = req.headers;
      if(!token)
      {
-         return res.json({success:false,message:'Not Auth Login Again'})
+         return res.json({
+           success: false,
+           message: "Authentication failed. Please log in again to continue.",
+         });
      }
      try {
         const token_decode =  jwt.verify(token,process.env.JWT_SECRET)

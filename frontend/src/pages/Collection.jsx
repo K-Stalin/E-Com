@@ -24,6 +24,7 @@ const toggleCategory = (e) => {
     }
   };
 
+
 const toggleSubCategory = (e) => {
     if (subCategory.includes(e.target.value)) 
     {
@@ -46,9 +47,7 @@ const applyFilter = () => {
 
     if (category.length > 0) 
     {
-      productsCopy = productsCopy.filter((item) =>
-        category.includes(item.category)
-      );
+      productsCopy = productsCopy.filter((item) => category.includes(item.category))
     } 
     else if (subCategory.length > 0)
     {
@@ -125,7 +124,7 @@ const sortFunction = () => {
               <input
                 className="w-3"
                 type="checkbox"
-                value={"Women"}
+                value={"Woman"}
                 onChange={toggleCategory}
               />
               Women
