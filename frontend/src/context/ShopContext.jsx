@@ -137,7 +137,6 @@ const getUserCart = async (token) =>{
        })
        if(response.data.success)
        { 
-         setAccountInformation(response.data.profile)
          setCartItems(response.data.cartData);
        }
      } catch (error) {
@@ -185,6 +184,7 @@ const getReview =  async () =>{
 useEffect(()=>{
   getProductsData()
   getReview()
+ 
 },[])
 
 useEffect(() => {

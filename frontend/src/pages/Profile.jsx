@@ -58,9 +58,8 @@ const Profile = () => {
     }
   }, [accountInformation]); // Re-run effect when accountInformation changes
 
-useEffect(()=>{
-  accountInformation
-},[])
+  
+
 
 
 
@@ -140,14 +139,6 @@ setTimeout(()=>{
               type="text"
             />
           )}
-        </div>
-        <div
-          className={`flex flex-col border pt-1 pb-1 pl-2 pr-2  w-[80%] sm:w-[25%] ${
-            btnText ? "cursor-not-allowed" : null
-          }`}
-        >
-          {btnText ? null : <span className="text-[12px]">Phone Number</span>}
-          <h3>+91 7639097966</h3>
         </div>
         {btnText ? null : (
           <div className="bg-[blue] text-[white] pl-6 pr-6 text-center pt-4 pb-2 rounded cursor-pointer  w-[80%] sm:w-[25%]">

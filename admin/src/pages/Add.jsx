@@ -158,6 +158,7 @@ const onSubmithandler = async(e) =>{
           <p className="mb-2">Product category</p>
           <select
             onChange={(e) => setCategroy(e.target.value)}
+            value={category}
             className="w-full px-3 py-2"
           >
             <option value="Men">Men</option>
@@ -169,6 +170,7 @@ const onSubmithandler = async(e) =>{
           <p className="mb-2">Sub category</p>
           <select
             onChange={(e) => setSubCategroy(e.target.value)}
+            value={subCategory}
             className="w-full px-3 py-2"
           >
             <option value="Topwear">Topwear</option>
